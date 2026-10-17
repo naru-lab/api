@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://localhost:3306/naru
     username: naru
-    password: naru
+    password: ${DB_PASSWORD:changeme}
     
   jpa:
     hibernate:
